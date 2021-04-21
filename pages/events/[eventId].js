@@ -12,7 +12,7 @@ function EventDetailPage() {
 
   if (!event) {
     return (
-      <div>
+      <div className="center">
         <h1>Sorry! No event found.</h1>
       </div>
     );
