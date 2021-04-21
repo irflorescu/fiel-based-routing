@@ -21,5 +21,7 @@ module.exports = {
     'object-curly-newline': 'off',
     'react/destructuring-assignment': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
+    'max-len': 'off',
+    'react/jsx-one-expression-per-line': 'off',
   },
 };
