@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import EventContent from '../../components/event-detail/event-content';
 import EventLogistics from '../../components/event-detail/event-logistics';
 import EventSummary from '../../components/event-detail/event-summary';
+import ErrorAlert from '../../components/ui/error-alert';
 import { getEventById } from '../../dummy-data';
 
 function EventDetailPage() {
@@ -12,9 +13,11 @@ function EventDetailPage() {
 
   if (!event) {
     return (
-      <div className="center">
-        <h1>Sorry! No event found.</h1>
-      </div>
+      <>
+        <ErrorAlert>
+          <p>Sorry! No event found.</p>
+        </ErrorAlert>
+      </>
     );
   }
 

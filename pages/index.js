@@ -6,6 +6,9 @@ function HomePage() {
 
   return (
     <div>
+      <h1 className="center" style={{ margin: '2rem auto', fontFamily: 'Raleway, sans-serif' }}>
+        Featured events
+      </h1>
       <EventList items={featuredEvents} />
     </div>
   );
